@@ -1,0 +1,51 @@
+<p>Registro de datos.</p>
+
+<div class="container">
+
+    <div class="row">
+    
+    <div class="col-md-6 offset-md-3">
+    
+    <h2>Registro de Personas</h2>
+    
+    <form >
+    
+    <div class="form-group">
+    
+    <label>Identificacion del paciente</label>
+    
+    <input type="text" name="idPaciente" [(ngModel)]="datos.idPaciente" class="form-control" />
+    
+    </div>
+    
+    <div class="form-group">
+    
+    <label>Valor del servicio</label>
+    
+    <input type="number" name="valorServicio" [(ngModel)]="datos.valorServicio" class="form-control" />
+    
+    </div>
+    
+    <div class="form-group">
+    
+    <label>Salario del trabajador</label>
+    
+    <input type="number" name="salarioTrabajador" [(ngModel)]="datos.salarioTrabajador" class="form-control" />
+    
+    </div>
+    
+    <div class="text-center">
+    
+    <button class="btn btn-primary mr-1"(click)="add()">Registrar</button>
+    
+    <button class="btn btn-secondary" type="reset">Cancel</button>
+    
+    </div>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    
+    </div>

@@ -1,0 +1,55 @@
+<p>Consultar</p>
+
+<div class="row">
+
+    <div class="col-6">
+    
+        <input [(ngModel)]="searchText" type="text" class="form-control" placeh
+    older="Type to filter">
+    
+    </div>
+    
+</div>
+    
+    <hr>
+    
+        <table class="table table-striped" *ngIf='listaDatos && listaDatos.length'>
+    
+            <thead>
+    
+                <tr>
+    
+                    <th scope="col">#</th>
+    
+                    <th scope="col">identificación del paciente</th>
+    
+                    <th scope="col">Valor del servicio </th>
+    
+                    <th scope="col">Salario del trabajador</th>
+    
+                    <th scope="col">Copago</th>
+    
+                </tr>
+    
+            </thead>
+    
+            <tbody>
+    
+                <tr *ngFor="let datos of listaDatos; index as i ">
+    
+                    <th scope="row">{{ i + 1 }}</th>
+    
+                    <td>{{ datos.idPaciente }} </td>
+    
+                    <td>{{ datos.valorServicio }}</td>
+    
+                    <td>{{ datos.salarioTrabajador }}</td>
+    
+                    <td>{{ datos.copago }}</td>
+    
+                </tr>
+    
+            </tbody>
+    
+    </table>
+    
